@@ -12,6 +12,16 @@ To investigate a Windows-based SSD obtained from a department machine suspected 
 - Build a timeline of relevant activity
 - Apply the NIST 800-61 incident response model to the process
 
+## Case Background
+
+This case involves a suspected security incident tied to a high-ranking LAPD officer. A Windows-based workstation SSD was handed over to the cybersecurity team after reports surfaced that the officer may have been accessing unauthorized websites or clicking on suspicious links during work hours.
+
+The device was removed from service and submitted for forensic analysis. At the time of this report:
+- The exact websites visited are unknown.
+- The nature of the links clicked or files downloaded is unclear.
+- No formal disclosure was made by the officer in question.
+- Direct questioning was discouraged, as the incident may result in disciplinary action or liability towards the officr.
+
 ---
 
 ## Nigel's Environment Setup
