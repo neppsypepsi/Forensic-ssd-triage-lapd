@@ -26,6 +26,7 @@ The device in question was the **third machine** assigned to this user. Colleagu
 | Last Seen Online | June 25, 3:51 PM             |
 
 ---
+ ![users](../evidence/users.png)
 
 ## Forensic Setup
 
@@ -62,9 +63,10 @@ Analyzed via `eventvwr.msc` and offline log extraction:
 
   * Flagged by **Malwarebytes** as a suspicious domain
   * When sandboxed, the link resolved to a fake Google homepage and later an error page (See image "error_code.png")
+ ![error code](../evidence/error_code.png)
 * **SCHANNEL errors**: Multiple TLS/SSL handshake failures were logged on May 6th arind 4:21PM, likely due to malformed or spoofed HTTPS requests
 * **System freeze** followed by BSOD
-
+![schannel](../evidence/schannelcode.png)
 ---
 
 ## Cookie Investigation
@@ -80,7 +82,7 @@ To further explore evidence of domain access and user behavior:
    * `Web Data`
 
 **Path of interest**:
-*See Images "sqlite1.png", "sqlite2.png" , "pathtosqlite1.png", "pathtosqlite2.png", and "n5245sqlite.png" for path contents
+*See Images ![SqliteFile1](../evidence/sqlite1.png), ![SqliteFile2](../evidence/sqlite2.png) , ![SqliteFile3](../evidence/pathtosqlite1.png), ![SqliteFile4](../evidence/pathtosqlite2.png), and ![SqliteFile5](../evidence/n5245sqlite.png) for path contents
 
 ### Results
 
@@ -88,7 +90,6 @@ To further explore evidence of domain access and user behavior:
 * The metadata of these files appeared to be mangled and not on track with any of our dates. Therefore these shoudln't be so reliable as we would hope for.
 * Browsing history only partially intact
 * BSOD may have wiped relevant temporary files
-
 Evidence was largely recovered from **log timestamps** and **URL block logs** from Malwarebytes.
 
 ---
@@ -106,6 +107,8 @@ Malwarebytes was the active AV at the time. The alert was confirmed via **URLSca
 * Possibility of visual content impersonating legitimate websites
 * See images for report : "urlscan1.png", and "urlscan2.png"
 ---
+[urlscan1](../evidence/urlscan1.png)
+[urlscan2](../evidence/urlscan2.png)
 
 ## Timeline of Events
 
