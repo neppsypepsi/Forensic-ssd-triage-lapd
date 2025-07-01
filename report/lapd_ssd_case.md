@@ -86,11 +86,7 @@ To further explore evidence of domain access and user behavior:
 
 ### Results
 
-* No cookies referencing the malicious domain were found
-* The metadata of these files appeared to be mangled and not on track with any of our dates. Therefore these shoudln't be so reliable as we would hope for.
-* Browsing history only partially intact
-* BSOD may have wiped relevant temporary files
-Evidence was largely recovered from **log timestamps** and **URL block logs** from Malwarebytes.
+The files relating to web browing were not found. However, these sqlite files were examined for additional evidence, but nothing of note was found.
 
 ---
 
