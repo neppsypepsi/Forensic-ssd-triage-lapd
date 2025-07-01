@@ -64,7 +64,7 @@ Analyzed via `eventvwr.msc` and offline log extraction:
   * Flagged by **Malwarebytes** as a suspicious domain
   * When sandboxed, the link resolved to a fake Google homepage and later an error page (See image "error_code.png")
  ![error code](../evidence/error_code.png)
-* **SCHANNEL errors**: Multiple TLS/SSL handshake failures were logged on May 6th arind 4:21PM, likely due to malformed or spoofed HTTPS requests
+* **SCHANNEL errors**: Multiple TLS/SSL handshake failures were logged on May 6th around 4:21PM, likely due to malformed or spoofed HTTPS requests
 * **System freeze** followed by BSOD
 ![schannel](../evidence/schannelcode.png)
 ---
