@@ -1,6 +1,6 @@
 # LAPD Task – SSD Forensic Triage (Redacted)
 
-> ⚠️ This is a redacted case study based on a real incident. All identifying details are included as this is primarily for Tsasky and the rest of the ITD Team.
+> ⚠️ This is a redacted case study based on a real incident. All identifying details are included as this is primarily for Zasky and the rest of the ITD Team.
 > This write-up is for educational and professional development purposes only.
 
 ---
