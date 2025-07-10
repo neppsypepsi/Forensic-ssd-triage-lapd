@@ -1,7 +1,8 @@
-# LAPD Task – SSD Forensic Triage (Redacted)
+# Forensic SSD Triage – Redacted Case Report
 
-> ⚠️ This is a redacted case study based on a real incident. All identifying details are included as this is primarily for Zasky and the rest of the ITD Team.
-> This write-up is for educational and professional development purposes only.
+⚠️ This is a redacted case study based on a real forensic investigation conducted during a cybersecurity internship.  
+All identifying information (e.g., user names, domains, asset tags) has been removed or obfuscated for public sharing.  
+This documentation follows NIST 800-61 guidelines and was created for educational and professional development purposes.
 
 ---
 
@@ -17,11 +18,11 @@ The device in question was the **third machine** assigned to this user. Colleagu
 
 | Attribute        | Detail                       |
 | ---------------- | ---------------------------- |
-| Asset Tag        | PD536639                     |
+| Asset Tag        | PD******                     |
 | Device Type      | HP Desktop                   |
 | OS               | Windows (version redacted)   |
-| Primary User     | `n5245` – Caroline Rodriguez |
-| Secondary User   | `n7293` – Edgar Reyes        |
+| Primary User     | `UserA` – C******* R******** |
+| Secondary User   | `UserB` – E**** R****        |
 | Other Users      | `Administrator`, `All Users` |
 | Last Seen Online | June 25, 3:51 PM             |
 
@@ -38,13 +39,13 @@ The device in question was the **third machine** assigned to this user. Colleagu
 | Access Mode         | Read-Only (write blocker enabled) |
 | Network Status      | Offline (Wi-Fi disabled)          |
 
-To ensure forensic soundness, the SSD was accessed in **read-only mode** and write blockers were used. Network interfaces were disabled to prevent any malware spreads or backdoor communication attempts.
+To ensure forensic soundness, the SSD was accessed in **read-only mode**  Network interfaces were disabled to prevent any malware spreads or backdoor communication attempts.
 
 ---
 
 ## Initial Observations
 
-Upon mounting the SSD and validating the hash (MD5), the following observations were made:
+Upon mounting the SSD the following observations were made:
 
 * Device suffered from multiple **BSODs**, with error logs showing **critical kernel failures**.
 * Our Focus was placed on **System** and **Application logs**, correlating crash times with known suspicious behavior.
@@ -58,7 +59,7 @@ Analyzed via `eventvwr.msc` and offline log extraction:
 
 ### Key Findings
 
-* **May 15, 8:53–9:00 AM**: User `n5245` was logged in and using **Microsoft Edge**.
+* **May 15, 8:53–9:00 AM**: User `UserA` was logged in and using **Microsoft Edge**.
 * **Accessed domain**: `conductorhimselfwhipped[.]com`
 
   * Flagged by **Malwarebytes** as a suspicious domain
@@ -119,7 +120,7 @@ Malwarebytes was the active AV at the time. The alert was confirmed via **URLSca
 
 ## ✅ Conclusions (So Far)
 
-* The user `n5245` was directly involved in the activity that led to the BSOD.
+* The user `UserA` was directly involved in the activity that led to the BSOD.
 * The domain `conductorhimselfwhipped[.]com` was confirmed suspicious and accessed by the user.
 * Logs, and AV Logs confirm user interaction with a malicious or malformed site.
 * Behavior is consistent with **malicious code execution** or **unauthorized software triggering system faults**.
